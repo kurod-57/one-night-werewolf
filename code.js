@@ -11,7 +11,7 @@ const FIN_LUPIN = 3
 /**
  * スラッシュコマンドを受付
  * sub_commandをチェックして処理を振り分け。
- * A10セルでSTATUS管理
+ * スプレッドシートのA10セルでSTATUS管理
  */
 const doPost = (event) => {
   console.log('doPost start')
@@ -80,6 +80,7 @@ const doPost = (event) => {
 
 /**
  * ヘルプ
+ * ヘルプメッセージを返すだけ。
  */
 const help = (param_list) => {
   text = 'ワンナイト人狼のコマンドです。ワンナイト人狼自体のルールに関しては以下を参照してください。\n'
